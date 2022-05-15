@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Dialer">
+        <activity android:name=".SpeedDialerActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

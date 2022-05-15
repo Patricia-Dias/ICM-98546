@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Dialer</string>
 
+    <string name="contact1">Contact 1</string>
+    <string name="contact2">Contact 2</string>
+    <string name="contact3">Contact 3</string>
     <string name="one">1</string>
     <string name="two">2</string>
     <string name="three">3</string>
@@ -13,6 +16,10 @@
     <string name="zero">0</string>
     <string name="star">*</string>
     <string name="hash">#</string>
-
     <string name="hint">Enter a Number</string>
+
+    <string name="speedContactTitle">Add Speed Contact</string>
+    <string name="labelPhoneNumber">Phone Number</string>
+    <string name="labelContactName">Contact Name</string>
+    <string name="addContactButton">Add</string>
 </resources>

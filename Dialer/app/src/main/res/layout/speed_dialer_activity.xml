@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpeedDialerActivity"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/SpeedDialLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <LinearLayout
+            android:id="@+id/TitleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20sp"
+                android:layout_marginBottom="10sp"
+                android:text="@string/speedContactTitle"
+                android:textColor="@color/orange"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ContactLayout"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="@string/labelPhoneNumber"
+                android:textColor="@color/green"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/textPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/NameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:gravity="center"
+                android:text="@string/labelContactName"
+                android:textColor="@color/green"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/personName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="30sp">
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pink"
+                android:gravity="center"
+                android:text="@string/addContactButton"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:onClick="addContact"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
