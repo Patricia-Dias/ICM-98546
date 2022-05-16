@@ -67,6 +67,19 @@ public class MainActivity extends AppCompatActivity {
         );
 
         input =findViewById(R.id.num);
+        backspace = findViewById(R.id.btn_backspace);
+
+        backspace.setOnLongClickListener(
+                new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View view) {
+                        input.setText("");
+                        return true;
+                    }
+                }
+        );
+
+
         btn1 =findViewById(R.id.btn_1);
         btn2 =findViewById(R.id.btn_2);
         btn3 =findViewById(R.id.btn_3);
@@ -80,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
         btn_star =findViewById(R.id.btn_star);
         btn_hash =findViewById(R.id.btn_hash);
         btn_call =findViewById(R.id.btn_call);
-        backspace = findViewById(R.id.btn_backspace);
 
         contacts = new HashMap<>();
     }
